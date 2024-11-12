@@ -1,6 +1,7 @@
 package br.com.prsribeiro.dslist.dto;
 
 import br.com.prsribeiro.dslist.entities.Game;
+import br.com.prsribeiro.dslist.projections.GameMinProjection;
 
 public class GameMinDTO {
 	/** CONSULTAS NO BD **/
@@ -16,6 +17,15 @@ public class GameMinDTO {
 	}
 
 	public GameMinDTO(Game entity) {
+
+		id = entity.getId();
+		title = entity.getTitle();
+		year = entity.getYear();
+		imgUrl = entity.getImgUrl();
+		shortDescription = entity.getLongDescription();
+	}
+
+	public GameMinDTO(GameMinProjection entity) {
 
 		id = entity.getId();
 		title = entity.getTitle();
