@@ -29,7 +29,7 @@ public class GameMinDTO {
 
 		id = entity.getId();
 		title = entity.getTitle();
-		year = entity.getYear();
+		year = entity.getGameYear();
 		imgUrl = entity.getImgUrl();
 		shortDescription = entity.getLongDescription();
 	}
